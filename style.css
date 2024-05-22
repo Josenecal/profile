@@ -100,6 +100,8 @@ main {
         backdrop-filter: blur(4px);
         color: black;
         border: solid black 3px;
+        border-radius: 25px;
+        padding: 10px;
 
         h2 {
             font-size: 2rem;
@@ -109,8 +111,9 @@ main {
     }
 
     #home-container {
-        background-color: rgba(0,0,0,0);
+        border: none;
         display: block;
+        backdrop-filter: none;
         h1 {
             font-size: 6rem;
             -webkit-text-fill-color: transparent;
