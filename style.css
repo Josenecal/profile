@@ -7,7 +7,7 @@ body {
     flex-direction: row;
     align-items: center;
     background-image: url("./images/IMG_0376.JPG");
-    background-size: 130%;
+    background-size: cover;
     background-clip: border-box;
     background-repeat: no-repeat;
     background-position: center;
@@ -24,6 +24,7 @@ nav {
     height: 95%;
     width: 10%;
     min-width: 175px;
+    border: solid white 2px;
     border-radius: 25px;
     size: auto;
     color: white;
@@ -54,6 +55,7 @@ nav {
         justify-content: flex-start;
 
         img {
+            border: solid white 2px;
             border-radius: 25px;
             width: 75%;
             margin: auto;
@@ -98,13 +100,16 @@ main {
     width: 85%;
 
     div {
-        margin: 10%;
+        margin: 10% auto;
+        width: fit-content;
         display: none;
         background-color: rgba(0, 0, 0, 0);
         backdrop-filter: blur(4px);
         color: black;
-        border: solid black 3px;
+        border-top: solid rgba(0,0,0,0.5) 1px;
+        border-left: solid rgba(0,0,0,0.5) 1px;
         border-radius: 25px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
         padding: 10px;
 
         h2 {
@@ -116,6 +121,7 @@ main {
 
     #home-container {
         border: none;
+        box-shadow: none;
         display: block;
         backdrop-filter: none;
         h1 {
