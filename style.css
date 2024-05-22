@@ -75,6 +75,10 @@ nav {
             height: 100%;
             padding: 3px;
         }  
+
+        li:hover {
+            cursor: pointer;
+        }
     }
 
     #nav-bottom {
