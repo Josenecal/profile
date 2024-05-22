@@ -1,6 +1,6 @@
 <head>
     <link rel="stylesheet" href="style.css"> 
-
+    
 </head>
 <body>
     <nav>
@@ -11,11 +11,11 @@
         </div>
         <div class="nav-container" id="nav-middle">
             <ul>
-                <li>HOME</li>
-                <li>ABOUT ME</li>
-                <li>PORTFOLIO</li>
-                <li>SKILLS</li>
-                <li>CONTACT</li>
+                <li><a id="home-bttn">HOME</a></li>
+                <li><a id="abt-bttn">ABOUT ME</a></li>
+                <li id="portfolio-bttn">PORTFOLIO</li>
+                <li id="skills-bttn">SKILLS</li>
+                <li id="contact-bttn">CONTACT</li>
             </ul>
         </div>
         <di class="nav-container" id="nav-bottom">
@@ -33,7 +33,34 @@
             <h1>I'm a Software Engineer</h1>
         </div>
         <div id="about-me-container">
-            <p>Here's some interesting info about me, lets see if it renders</p>
+            <h2>About Me</h2>
+            <p>Here is some interesting information about me!</p>
+        </div>
+        <div id="portfolio-container">
+            <h2>My Portfolio</h2>
+            <p>Sometime in the future I'm going to render a beautiful set of flex box tiles displaying all of my portfolio projects I've built over the years!</p>
+        </div>
+        <div id="skills-container">
+            <h2>My Skills</h2>
+            <p>Coming Soon, a dynamic word-cloud kind of display that will at least list off all of my current skills</p>
+        </div>
+        <div id="contact-container">
+            <h2>Contact Me</h2>
+            <table>
+                <tr>
+                    <td>Phone:</td>
+                    <td>(802) 399-8647</td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><a href="mailto:jasenecal2@gmail.com">jasenecal2@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td>Physical:</td>
+                    <td><p>11958 Ridge Pkwy, Apt 312</p><p>Broomfield CO, 80021</p></td>
+                </tr>
+            </table>
         </div>
     </main>
 </body>
+<script src="src/main.js"></script>
