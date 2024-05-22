@@ -1,0 +1,105 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 12pt;
+}
+.main-content {
+    --background-color: #1F284C;
+    --text-color: #ECE2C6;
+    --highlight-color: #D9CCAC;
+    --dark-highlight-color: #6E6352;
+    --light-bkgd: #2D4472;
+
+
+    text-align: center;
+    display: flex;
+    margin: 0;
+    padding: 5px;
+    background-color: var(--background-color);
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    & p {
+        text-align: justify;
+        color: var(--text-color);
+        padding: 10px;
+    }
+
+    .name-splash {
+        font-size: 3em;
+        font-family: serif;
+        color:var(--text-color);
+    }
+    
+    .title-splash {
+        font-size: 1.3 em;
+        color: var(--text-color);
+        text-align: center;
+        padding: 3px;
+    }
+
+    & h3 {
+        font-size: 2em;
+        background-color: var(--highlight-color);
+        color: var(--background-color);
+    }
+
+    & h4 {
+        font-size 1.3em;
+        color: var(--text-color);
+        text-align: left;
+        padding: 5px;
+
+    }
+
+    & section {
+        flex-direction: row;
+        min-width: 300px;
+        flex: 1;
+        background-color: var(--light-bkgd)
+    }
+
+    #personal-information {
+        flex: 1;
+        border-style: solid;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 0;
+        margin: 5px;
+        padding: 5px;
+        background-color: #3a5791;
+
+        #headshot-image {
+            border-radius: 50%;
+            border: solid;
+            border-color: var(--text-color);
+            margin: 30px;
+            width: 90%;
+        }
+
+        #social-icns {
+            border-style: dotted;
+            border-color: grey;
+            border-width: 5px;
+            border-radius: 5em;
+            padding: 0 5%;
+            & ul {
+                list-style-type: none;
+            }
+            & li {
+                display: inline-block;
+                min-inline-size: 30%;
+            }
+        }
+    }
+
+    #professional-information {
+        flex: 1;
+        border-style: solid;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 0;
+        margin: 5px;
+        padding: 5px;
+    }
+}

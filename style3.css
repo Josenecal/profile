@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: url("./images/IMG_0376.JPG");
+    background-size: 130%;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: darkslategrey;
+    font-family: sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+nav {
+    margin: 10px;
+    height: 95%;
+    width: 10%;
+    min-width: 175px;
+    border-radius: 25px;
+    size: auto;
+    color: white;
+    font-size: 1.5rem;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+
+    ul {
+        list-style-type: none;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-container {
+        display: block;
+        height: 30%;
+        margin: auto;
+    }
+
+    #nav-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        img {
+            border-radius: 25px;
+            width: 75%;
+            margin: auto;
+            margin-top: 15px;
+            display: block;
+        }
+    }
+
+    #nav-middle {
+        justify-content: space-evenly;
+        justify-content: center;
+        align-items: center;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            padding: 3px;
+        }  
+    }
+
+    #nav-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        img {
+            margin: 10px;
+            width: 60px;
+            height:60px;
+        }
+    }
+
+}
+main {
+    width: 85%;
+
+    div {
+        padding-left: 20px;
+        background-color: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(4px);
+        color: black;
+    }
+
+    #home-container {
+        background-color: rgba(0,0,0,0);
+        display: block;
+        h1 {
+            font-size: 6rem;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 3px;
+        }
+    }
+
+    #about-me-container {
+        display: none;
+    }
+}
