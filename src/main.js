@@ -11,82 +11,34 @@ var skillsContainer = document.querySelector("#skills-container")
 var contactContainer = document.querySelector("#contact-container")
 
 homeButton.addEventListener("click", function(event) {
-    hideAbout();
-    hidePortfolio();
-    hideSkills();
-    hideContact();
-    showHome();
+    hideMainDivs();
+    homeContainer.style.display = "block";
 });
 
 aboutButton.addEventListener("click", function(event) {
-    hideHome();
-    hidePortfolio();
-    hideSkills();
-    hideContact();
-    showAbout();
+    hideMainDivs();
+    aboutMeContainer.style.display = "block";
 })
 
 porfolioButton.addEventListener("click", function(event) {
-    hideHome();
-    hideAbout();
-    hideSkills();
-    hideContact();
-    showPortfolio();
+    hideMainDivs();
+    portfolioContainer.style.display = "block";
 })
 
 skillsButton.addEventListener("click", function(event) {
-    hideHome();
-    hideAbout();
-    hidePortfolio();
-    hideContact();
-    showSkills();
+    hideMainDivs();
+    skillsContainer.style.display = "block";
 })
 
 contactButton.addEventListener("click", function(event) {
-    hideHome();
-    hideAbout();
-    hidePortfolio();
-    hideSkills();
-    showContact();
+    hideMainDivs();
+    contactContainer.style.display = "block";
 })
 
-function showAbout() {
-    aboutMeContainer.style.display = "block";
-}
-
-function hideAbout() {
-    aboutMeContainer.style.display = "none";
-}
-
-function showHome() {
-    homeContainer.style.display = "block";
-}
-
-function hideHome() {
+function hideMainDivs() {
     homeContainer.style.display = "none";
-}
-
-function showPortfolio() {
-    portfolioContainer.style.display = "block";
-}
-
-function hidePortfolio() {
+    aboutMeContainer.style.display = "none";
     portfolioContainer.style.display = "none";
-}
-
-function showSkills() {
-    skillsContainer.style.display = "block";
-}
-
-function hideSkills() {
     skillsContainer.style.display = "none";
-}
-
-function showContact() {
-    contactContainer.style.display = "block";
-}
-
-function hideContact() {
     contactContainer.style.display = "none";
 }
-
