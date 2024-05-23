@@ -145,8 +145,12 @@ main {
         -webkit-text-fill-color: rgba(255, 255, 255, 0.3);
         -webkit-text-stroke: 3px;
 
+        h1 {
+            font-size: 8rem;
+        }
+
         section {
-            display: inline;
+            display: inline-block;
             -webkit-text-fill-color: rgba(0, 191, 255, 0.7);
             
         }
