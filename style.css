@@ -129,6 +129,11 @@ main {
 
         td {
             padding: 25px;
+
+            a, a:visited {
+                text-decoration: none;
+                color: inherit;
+            }
         }
     }
 
