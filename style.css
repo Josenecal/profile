@@ -6,8 +6,8 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-image: url("./images/IMG_0376.JPG");
-    background-size: 130%;
+    background-image: url("./images/IMG_0054.JPG");
+    background-size: cover;
     background-clip: border-box;
     background-repeat: no-repeat;
     background-position: center;
@@ -20,17 +20,17 @@ body, html {
 }
 
 nav {
-    margin: 10px;
-    height: 95%;
+    margin: 5px;
+    height: 99%;
     width: 10%;
     min-width: 175px;
     border-radius: 25px;
     size: auto;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(4px);
 
     ul {
         list-style-type: none;
@@ -54,6 +54,7 @@ nav {
         justify-content: flex-start;
 
         img {
+            border: solid black 1px;
             border-radius: 25px;
             width: 75%;
             margin: auto;
@@ -75,6 +76,10 @@ nav {
             height: 100%;
             padding: 3px;
         }  
+
+        li:hover {
+            cursor: pointer;
+        }
     }
 
     #nav-bottom {
@@ -91,33 +96,59 @@ nav {
 
 }
 main {
-    width: 85%;
+    width: 100%;
+    max-width: 1300px;
 
     div {
-        margin: 10%;
+        margin: 10% auto;
+        width: fit-content;
+        min-width: 300px;
+        max-width: 1000px;
         display: none;
-        background-color: rgba(0, 0, 0, 0);
+        background-color: rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(4px);
         color: black;
-        border: solid black 3px;
+        border-top: solid rgba(0,0,0,0.5) 1px;
+        border-left: solid rgba(0,0,0,0.5) 1px;
         border-radius: 25px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
         padding: 10px;
+        text-align: justify;
 
         h2 {
+            text-align: center;
             font-size: 2rem;
             -webkit-text-fill-color: white;
             -webkit-text-stroke: 2px;
         }
+
+        table {
+            width: auto;
+            margin: auto;
+        }
+
+        td {
+            padding: 25px;
+        }
     }
 
     #home-container {
+        max-width: 1500px;
+        margin: 10% 25px;
         border: none;
-        display: block;
+        box-shadow: none;
+        display: inline-block;
         backdrop-filter: none;
-        h1 {
-            font-size: 6rem;
-            -webkit-text-fill-color: transparent;
-            -webkit-text-stroke: 3px;
+        background-color: transparent;
+        text-align: left;
+        font-size: 8rem;
+        -webkit-text-fill-color: rgba(255, 255, 255, 0.3);
+        -webkit-text-stroke: 3px;
+
+        section {
+            display: inline;
+            -webkit-text-fill-color: rgba(0, 191, 255, 0.7);
+            
         }
     }
 
