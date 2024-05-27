@@ -5,36 +5,23 @@
 <body>
     <!-- NAV section will display to the side, broken up into 3 divs that will render on top of each other in a flex column -->
     <nav>
-        <div class="nav-container" id="nav-top">
-            <ul>
-                <li><img src="images/headshot.jpg" /></li>
-            </ul>
-        </div>
-        <div class="nav-container" id="nav-middle">
-            <ul>
-                <li><a id="home-bttn">HOME</a></li>
-                <li><a id="abt-bttn">ABOUT ME</a></li>
-                <li id="portfolio-bttn">PORTFOLIO</li>
-                <li id="skills-bttn">SKILLS</li>
-                <li id="contact-bttn">CONTACT</li>
-            </ul>
-        </div>
-        <di class="nav-container" id="nav-bottom">
-            <ul>
-                <li><a href="https://www.github.com/Josenecal"><img class="icn" src="images/github.png" /></a></li>
-                <li><a href="https://www.linkedin.com/in/jasenecal"><img class="icn" src="images/linked_in.png" /></a></li>
-                <li><a href="mailto:jasenecal2@gmail.com"><img class="icn" src="images/email.png" /></a></li>
-            </ul>
-        </div>
+        <ul>
+            <li><img src="images/headshot.jpg" /></li>
+            <li><a id="home-bttn">HOME</a></li>
+            <li><a id="abt-bttn">ABOUT ME</a></li>
+            <li id="portfolio-bttn">PORTFOLIO</li>
+            <li id="skills-bttn">SKILLS</li>
+            <li id="contact-bttn">CONTACT</li>
+        </ul>
     </nav>
     <!-- MAIN section will house all of the different articles and sections for the page, with JS controlling hide/show functions -->
     <main>
-        <div id="home-container">
+        <div class="content-container" id="home-container">
             <h1><section>Hi!</section> My name's</h1>
             <h1><section>Joe.</section> I'm a</h1>
             <h1><section>Software Engineer</section></h1>
         </div>
-        <div id="about-me-container">
+        <div class="content-container" id="about-me-container">
             <h2>About Me</h2>
             <br>
             <h3>Vermont to Colorado</h3>
@@ -73,37 +60,45 @@
                 As I set out for my next role, I am excited to have more time to do some self-directed learning for the sake of interest, not just the needs of a project, and I am reminded of the limitless potential of the field that has always kept me engaged with it. I hope you will visit my GitHub page to see what I've been writing, and the portfolio portion of this profile page to see both code repositories and deployed examples of the other projects I'm currently working on!
             </p>
         </div>
-        <div id="portfolio-container">
+        <div class="content-container" id="portfolio-container">
             <h2>My Portfolio</h2>
             <div id="portfolio-tiles">
-                <!--Left intentionally empty. Javascript will come in and build tiles to fill this contact-container
+                <!-- Left intentionally empty. Javascript will come in and build tiles to fill this contact-container
                     with information taken out of the data js file -->
             </div>
         </div>
-        <div id="skills-container">
+        <div class="content-container" id="skills-container">
             <h2>My Skills</h2>
-            <p>Coming Soon, a dynamic word-cloud kind of display that will at least list off all of my current skills</p>
+            <div id="tag-cloud">
+                <!-- Left intentionally empty. Javascript will come in and build the word cloud in this container
+                    with data from the data.js module -->
+            </div>
         </div>
-        <div id="contact-container">
+        <div class="content-container" id="contact-container">
             <h2>Contact Me</h2>
             <p>Thank you so much for taking an interest in my profile and in my work! Please feel free to reach out for any reason, whether you are an employer looking for new talent or a fellow developer looking to network professionally. Inquiries  will receive a response as quickly as is possible, typically within 24 hours.</p><br>
             <table>
                 <tr>
-                    <a href="https://www.linkedin.com/in/jasenecal">
-                        <td class="icon-social-linkedin left-border"></td>
-                        <td class="right-border"><a href="https://www.linkedin.com/in/jasenecal">https://www.linkedin.com/in/jasenecal</a></td>
-                    </a>
+                    <td class="icon-social-github icon"></td>
+                    <td><a href="https://www.github.com/josenecal">https://www.github.com/josenecal</a></td>
                 </tr>
                 <tr>
-                    <td class="icon-envelope left-border" />
+                    <td class="icon-social-linkedin icon"></td>
+                    <td class="right-border"><a href="https://www.linkedin.com/in/jasenecal">https://www.linkedin.com/in/jasenecal</a></td>
+                </tr>
+                <tr>
+                    <td class="icon-envelope icon" />
                     <td class="right-border"><a href="mailto:jasenecal2@gmail.com">jasenecal2@gmail.com</a></td>
                 </tr>
                 <tr>
-                    <td class="icon-location-pin left-border">
+                    <td class="icon-location-pin icon">
                     <td class="right-border">Broomfield, CO</td>
                 </tr>
             </table>
         </div>
     </main>
 </body>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script src="src/jquery.svg3dtagcloud.js"></script>
+<script src="src/data.js"></script>
 <script src="src/main.js"></script>
