@@ -98,6 +98,16 @@ main {
         scrollbar-width: none;
         -ms-overflow-style: none;
 
+        article {
+            background-color: white;
+            margin: 10px;
+            padding: 15px;
+            border-top: solid rgba(0,0,0,0.5) 1px;
+            border-left: solid rgba(0,0,0,0.5) 1px;
+            border-radius: 25px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        }
+
         h2 {
             text-align: center;
             font-size: 2rem;
