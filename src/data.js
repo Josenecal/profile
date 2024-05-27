@@ -132,5 +132,10 @@ var skills = [
         "width": "75px",
         "height": "75px",
         "url": "#"
+    },{
+        "image": "images/rest_api.png",
+        "width": "75px",
+        "height": "75px",
+        "url": "#"
     },
 ]

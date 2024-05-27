@@ -81,17 +81,17 @@ function renderSkillsCloud() {
     var settings = {
 
         entries: skills,
-        width: 800,
-        height: 800,
-        radius: '80%',
-        radiusMin: 75,
+        width: 600,
+        height: 600,
+        radius: '65%',
+        radiusMin: 25,
         bgDraw: true,
         bgColor: 'transparent',
         opacityOver: 1.00,
         opacityOut: 0.05,
         opacitySpeed: 6,
-        fov: 800,
-        speed: 0.5,
+        fov: 360,
+        speed: 0.2,
         fontFamily: 'Oswald, Arial, sans-serif',
         fontSize: '15',
         fontColor: '#fff',
@@ -110,7 +110,7 @@ function renderSkillsCloud() {
         tooltipDiffX: 0,
         tooltipDiffY: 10,
         animatingSpeed: 0.01,
-        animatingRadiusLimit: 1.3
+        animatingRadiusLimit: 1.5
     
     };
 
